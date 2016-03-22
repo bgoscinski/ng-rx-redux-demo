@@ -28,7 +28,7 @@ component('newTodo', {
       <label for="done">Done:</label>
       <input type="checkbox" name="done"
         rx-model="newTodo.newTodo$ as form : form.done"
-        on-next-form="newTodo.update(value)"
+        on-next="newTodo.update({done: value})"
       >
     </form>
     <debug-cmp observe="form" observable="newTodo.newTodo$"></debug-cmp>
