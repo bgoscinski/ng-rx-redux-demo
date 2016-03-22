@@ -1,12 +1,16 @@
 {
-  "name": "ng-rx-redux",
-  "version": "2.1.0",
-  "description": "angular@1.x + Rx.js + Redux like state management test",
-  "main": "index.js",
+  "name": "ng-rx-redux-demo",
+  "version": "1.0.0",
+  "description": "Demo app for ng-rx-redux",
+  "main": "src/module.js",
   "scripts": {
     "serve": "live-server",
     "start": "npm run -s serve",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bgoscinski/ng-rx-redux-demo.git"
   },
   "keywords": [],
   "author": "bgoscinski",
@@ -69,64 +73,6 @@
         }
       }
     }
-  },
-  "jspm2": {
-    "dependencies": {
-      "angular": "github:angular/bower-angular@^1.5.0",
-      "angular-animate": "github:angular/bower-angular-animate@^1.5.0",
-      "lodash": "npm:lodash@^4.6.1",
-      "redux-thunk": "github:gaearon/redux-thunk@^2.0.1",
-      "rxjs": "npm:rxjs@^5.0.0-beta.2"
-    },
-    "devDependencies": {
-      "babel-runtime": "npm:babel-runtime@^5.8.24"
-    },
-    "peerDependencies": {
-      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
-      "core-js": "npm:core-js@^1.1.4",
-      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
-      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
-      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
-    },
-    "overrides": {
-      "github:angular/bower-angular-animate@1.5.0": {
-        "main": "angular-animate",
-        "registry": "jspm",
-        "dependencies": {
-          "angular": "^1.3.0"
-        },
-        "meta": {
-          "angular-animate.js": {
-            "deps": [
-              "angular"
-            ],
-            "format": "global"
-          }
-        }
-      },
-      "github:angular/bower-angular@1.5.0": {
-        "main": "angular",
-        "meta": {
-          "angular.js": {
-            "exports": "angular",
-            "format": "global"
-          }
-        }
-      },
-      "github:gaearon/redux-thunk@2.0.1": {
-        "format": "esm",
-        "directories": {
-          "dist": "src"
-        },
-        "main": "index.js"
-      },
-      "npm:babel-runtime@5.8.35": {
-        "main": false,
-        "dependencies": {},
-        "optionalDependencies": {
-          "core-js": "^1.2.0"
-        }
-      }
-    }
   }
-}
+}
+
