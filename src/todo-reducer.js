@@ -1,5 +1,5 @@
 import 'rxjs/add/observable/from.js'
-import {Observable} from 'rxjs/observable.js'
+import {Observable} from 'rxjs/Observable.js'
 import {createReducer} from 'ng-rx-redux'
 import {constant, factory} from './module.js'
 
@@ -51,7 +51,7 @@ factory('todoActions', ($timeout) => ({
   toggle: (id) => (dispatch) => {
     dispatch({type: 'updatingTodo', id});
 
-    return FromObservable.create($timeout(() => { // make api request
+    return Observable.from($timeout(() => { // make api request
       dispatch({type: 'updatedTodo', id});
       dispatch({type: 'toggleTodo', id});
 
