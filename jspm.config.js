@@ -32,17 +32,17 @@ SystemJS.config({
     "core-js": "npm:core-js@1.2.6",
     "fs": "github:jspm/nodelibs-fs@0.2.0-alpha",
     "lodash": "npm:lodash@4.6.1",
-    "ng-rx-redux": "github:bgoscinski/ng-rx-redux@split",
+    "ng-rx-redux": "github:bgoscinski/ng-rx-redux@master",
     "path": "github:jspm/nodelibs-path@0.2.0-alpha",
     "plugin-babel": "npm:systemjs-plugin-babel@0.0.8",
     "process": "github:jspm/nodelibs-process@0.2.0-alpha",
     "redux-thunk": "npm:redux-thunk@2.0.1",
-    "rxjs": "npm:rxjs@5.0.0-beta.2"
+    "rxjs": "npm:rxjs@5.0.0-beta.3"
   },
   packages: {
-    "github:bgoscinski/ng-rx-redux@split": {
+    "github:bgoscinski/ng-rx-redux@master": {
       "map": {
-        "rxjs": "npm:rxjs@5.0.0-beta.2"
+        "rxjs": "npm:rxjs@5.0.0-beta.3"
       }
     },
     "github:angular/bower-angular-animate@1.5.2": {
